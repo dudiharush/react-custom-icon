@@ -1,16 +1,16 @@
-# react-custom-icon-creator
+# react-custom-icon
 
-React Custom Icon Creator uses SVG for the icon content, and the icon types are type safe, with intellisense (via Typescript)
+React Custom Icon uses SVG for the icon content, and the icon types are type safe, with intellisense (via Typescript)
 
 # installation
 
-run: npm i react-custom-icon-creator
+run: npm i @dudiharush/react-custom-icon
 
 # usage example
 
 ```
 import * as React from "react";
-import { createIconMap, getCustomIcon } from "react-custom-icon-creator";
+import { createIconMap, getCustomIcon } from "@dudiharush/react-custom-icon";
 
 // step 1: create icon map
 const iconMap = createIconMap({
