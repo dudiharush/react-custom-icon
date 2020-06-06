@@ -1,6 +1,7 @@
 # react-custom-icon
 
 React Custom Icon uses SVG for the icon content, and the icon types are type safe, with intellisense (via Typescript)
+<img src="./react-icon.png"/>
 
 # installation
 
