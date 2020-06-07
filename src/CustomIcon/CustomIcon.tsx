@@ -10,7 +10,7 @@ type CustomIconProps<K> = {
 
 type IconData = {
   content: JSX.Element;
-  viewBox: string;
+  viewBoxSize: number;
 };
 
 type IconMap = Record<string, IconData>;
@@ -24,12 +24,12 @@ export function getCustomIcon<T extends IconMap>(map: T) {
     stroke,
     ...others
   }: CustomIconProps<keyof T>) => {
-    const { viewBox, content } = map[type];
+    const { viewBoxSize, content } = map[type];
     return (
       <svg
         className={className}
         xmlns="http://www.w3.org/2000/svg"
-        viewBox={viewBox}
+        viewBox={`0 0 ${viewBoxSize} ${viewBoxSize}`}
         fill={color}
         height={size}
         width={size}
