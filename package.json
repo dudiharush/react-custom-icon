@@ -2,7 +2,7 @@
   "name": "@dudiharush/react-custom-icon",
   "main": "dist/cjs/index.js",
   "module": "dist/ejs/index.js",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "React Custom Icon uses SVG for the icon content",
   "types": "dist/types/CustomIcon/CustomIcon.d.ts",
   "keywords": [
