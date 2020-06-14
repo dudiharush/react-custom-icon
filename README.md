@@ -11,10 +11,10 @@ run: npm i @dudiharush/react-custom-icon
 
 ```
 import * as React from "react";
-import { createIconMap, getCustomIcon } from "@dudiharush/react-custom-icon";
+import { IconMap, getCustomIcon } from "@dudiharush/react-custom-icon";
 
-// step 1: create icon map
-const iconMap = createIconMap({
+// step 1: define icon map
+const iconMap: IconMap = {
   IconName1: {
     content: (
       <path
@@ -39,11 +39,11 @@ const iconMap = createIconMap({
     ),
     viewBoxSize: 18
   }
-});
+};
 
 export function App() {
 
-  // step 2: get <CustomIcon> component by passing the icon map that has been created in step 1
+  // step 2: get <CustomIcon> component by passing the icon map from step 1
   const CustomIcon = getCustomIcon(iconMap);
   return (
     <div>

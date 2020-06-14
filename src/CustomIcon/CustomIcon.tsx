@@ -13,7 +13,7 @@ type IconData = {
   viewBoxSize: number;
 };
 
-type IconMap = Record<string, IconData>;
+export type IconMap = Record<string, IconData>;
 
 export function getCustomIcon<T extends IconMap>(map: T) {
   const CustomIcon = ({
@@ -42,8 +42,4 @@ export function getCustomIcon<T extends IconMap>(map: T) {
   };
 
   return CustomIcon;
-}
-
-export function createIconMap<T extends IconMap>(iconMap: T) {
-  return iconMap;
 }
