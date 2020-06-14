@@ -1,1 +1,1 @@
-export { getCustomIcon } from "../CustomIcon/CustomIcon";
+export * from "../CustomIcon/CustomIcon";
