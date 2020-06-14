@@ -1,1 +1,1 @@
-export { createIconMap, getCustomIcon } from "../CustomIcon/CustomIcon";
+export { getCustomIcon } from "../CustomIcon/CustomIcon";
