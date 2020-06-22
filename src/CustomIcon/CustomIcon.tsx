@@ -43,7 +43,3 @@ export function getCustomIcon<T extends IconMap>(map: T) {
 
   return CustomIcon;
 }
-
-export function createIconMap<T extends IconMap>(iconMap: T) {
-  return iconMap;
-}

@@ -1,7 +1,7 @@
 import * as React from "react";
-import { createIconMap, getCustomIcon } from "./CustomIcon/CustomIcon";
+import { IconMap, getCustomIcon } from "./CustomIcon/CustomIcon";
 
-const map = createIconMap({
+const map: IconMap = {
   IconName1: {
     content: (
       <path
@@ -26,7 +26,7 @@ const map = createIconMap({
     ),
     viewBoxSize: 18,
   },
-});
+};
 
 export function App() {
   const CustomIcon = getCustomIcon(map);
